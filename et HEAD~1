@@ -1,0 +1,95 @@
+[33mcommit a8fe7c3da5c42f37ea76b6605143162a5353ef5d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Zuzanna Kochowska <zuzannakochowska@gmail.com>
+Date:   Wed May 14 10:09:11 2025 +0200
+
+    preprecessed data flights
+
+ 04_airports/flights.csv          | Bin [31m592406196[m -> [32m0[m bytes
+ 04_airports/flights_original.csv | Bin [31m592406591[m -> [32m0[m bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit e0a0b094b91c81f6b5028f92536876942665ccc1[m
+Author: Zuzanna Kochowska <zuzannakochowska@gmail.com>
+Date:   Wed May 14 10:04:24 2025 +0200
+
+    Initial commit
+
+ preprocessed_data.csv | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+[33mcommit 6af34487952675f743a30b3ff6b77a24d50b2b74[m
+Author: Zuzanna Kochowska <zuzannakochowska@gmail.com>
+Date:   Wed May 14 10:02:59 2025 +0200
+
+    flights distance
+
+ 04_airports/01_count_row_job.py        |  17 [32m++[m
+ 04_airports/02_preprocessed_data.py    |  18 [32m++[m
+ 04_airports/03_average_distance_job.py |  35 [32m++++[m
+ 04_airports/airlines.csv               |  14 [32m++[m
+ 04_airports/airports.csv               | 323 [32m+++++++++++++++++++++++++++++++++[m
+ 04_airports/flights.csv                | Bin [31m0[m -> [32m592406196[m bytes
+ 04_airports/flights_original.csv       | Bin [31m0[m -> [32m592406591[m bytes
+ 04_airports/preprocessed_data.csv      | Bin [31m0[m -> [32m316840772[m bytes
+ 04_airports/test.txt                   |  18 [32m++[m
+ 9 files changed, 425 insertions(+)
+
+[33mcommit 15d67cbf03fc3aa3bed95da171e9785e2af9795b[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Zuzanna Kochowska <zuzannakochowska@gmail.com>
+Date:   Tue May 13 13:15:55 2025 +0200
+
+    most common word
+
+ 03_example/01_job_first_step.py  | 26 [32m++++++++++++++++++++++++++[m
+ 03_example/02_job_second_step.py | 30 [32m++++++++++++++++++++++++++++++[m
+ 03_example/data.txt              |  3 [32m+++[m
+ 3 files changed, 59 insertions(+)
+
+[33mcommit 743baadcaff12e07fe24fc962737e0e921fe4c34[m
+Author: Zuzanna Kochowska <zuzannakochowska@gmail.com>
+Date:   Mon May 12 15:14:23 2025 +0200
+
+    Initial commit
+
+ 01_intro/01_simple_map_reduce.py  |    12 [32m+[m
+ 01_intro/02_simple_job.py         |    22 [32m+[m
+ 01_intro/SMSSpamCollection.txt    |  5574 [32m++++++++[m
+ 01_intro/data.txt                 |     3 [32m+[m
+ 02_word_count/iliada.txt          | 26175 [32m++++++++++++++++++++++++++++++++++++[m
+ 02_word_count/most_common_word.py |    30 [32m+[m
+ 02_word_count/regex.py            |     7 [32m+[m
+ 02_word_count/word_count.py       |    13 [32m+[m
+ test.py                           |     3 [31m-[m
+ 9 files changed, 31836 insertions(+), 3 deletions(-)
+
+[33mcommit 8977e17ddad94e18501aff2c3da279ed0be2a76e[m
+Author: Zuzanna Kochowska <zuzannakochowska@gmail.com>
+Date:   Fri May 9 10:40:22 2025 +0200
+
+    Initial commit
+
+ .idea/.gitignore                               | 8 [32m++++++++[m
+ .idea/big-data-hadoop-map-reduce.iml           | 8 [32m++++++++[m
+ .idea/inspectionProfiles/profiles_settings.xml | 6 [32m++++++[m
+ .idea/misc.xml                                 | 7 [32m+++++++[m
+ .idea/modules.xml                              | 8 [32m++++++++[m
+ .idea/vcs.xml                                  | 6 [32m++++++[m
+ 6 files changed, 43 insertions(+)
+
+[33mcommit 219043e1b805eea594995dc725b6ab7bed75933c[m
+Author: ZuzannaKochowska <132690615+zuzannakochowska@users.noreply.github.com>
+Date:   Fri May 9 10:40:07 2025 +0200
+
+    Initial commit
+
+ test.py | 3 [32m+++[m
+ 1 file changed, 3 insertions(+)
+
+[33mcommit b2b2503e8b00322b5f479fb775468f00abeb812c[m
+Author: ZuzannaKochowska <132690615+ZuzannaKochowska@users.noreply.github.com>
+Date:   Thu May 8 12:52:24 2025 +0200
+
+    Initial commit
+
+ .gitignore | 174 [32m+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[m
+ 1 file changed, 174 insertions(+)
