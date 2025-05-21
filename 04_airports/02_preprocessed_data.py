@@ -14,5 +14,6 @@ class MRFlights(MRJob):
         yield year, (month, day, airline, distance)
 
 
+
 if __name__ == '__main__':
     MRFlights.run()
