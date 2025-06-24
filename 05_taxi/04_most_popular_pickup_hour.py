@@ -5,8 +5,8 @@ from mrjob.step import MRStep
 class MRTaxi(MRJob):
 
     def steps(self):
-        return [MRStep(mapper=self.mapper, reducer=self.reducer),
-                MRStep(mapper=self.mapper_pass_through, reducer=self.reducer_get_sorted)]
+        return [MRStep(mapper=self.mapper, reducer=self.reducer)]
+                # MRStep(mapper=self.mapper_pass_through, reducer=self.reducer_get_sorted)]
 
 
     def mapper(self, _, line):
@@ -25,16 +25,16 @@ class MRTaxi(MRJob):
     def reducer(self, key, values):
         yield key, sum(values)
 
-    def mapper_pass_through(self, hour, total_rides):
-        yield None, (total_rides, hour)
-
-    def reducer_get_sorted(self, _, hour_counts):
-        hour_counts = list(hour_counts)
-        top_hours = sorted(hour_counts, reverse=True)[:23]
-
-
-        for count, hour  in top_hours:
-            yield hour, count
+    # def mapper_pass_through(self, hour, total_rides):
+    #     yield None, (total_rides, hour)
+    #
+    # def reducer_get_sorted(self, _, hour_counts):
+    #     hour_counts = list(hour_counts)
+    #     top_hours = sorted(hour_counts, reverse=True)[:23]
+    #
+    #
+    #     for count, hour  in top_hours:
+    #         yield hour, count
 
 if __name__ == '__main__':
     MRTaxi.run()
